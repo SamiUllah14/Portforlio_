@@ -1,0 +1,73 @@
+﻿.navbar {
+    background-color: black;
+    padding: 20px 0; /* Increase the top and bottom padding */
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+
+.navbar-nav {
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    justify-content: space-between; /* Evenly distribute space */
+}
+
+    .navbar-nav .nav-item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #ffffff;
+        text-align: center; /* Horizontally center the text */
+        margin: 0 25px; /* Add more space */
+    }
+        .navbar-nav .nav-item.nav-link:hover {
+            color: #EF7624; /* Change text color on hover */
+        }
+
+        .navbar-nav .nav-item.nav-link i:hover {
+            color: #EF7624; /* Change icon color on hover */
+        }
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 69px;
+    color: #ffffff;
+}
+
+.wave-text-container {
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin-top: 13px;
+}
+
+.wave-text {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    animation: waveAnimation 2s linear infinite;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

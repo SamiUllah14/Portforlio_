@@ -1,0 +1,28 @@
+﻿.scrolling-text-container {
+    height: 25px;
+
+    width: 100%;
+    background-color: #EF7624;
+    overflow: hidden; /* Hides the overflowing text */
+    position: relative; /* Allows absolute positioning of the scrolling text */
+}
+
+.scrolling-text {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Initial position to start the animation */
+    white-space: nowrap; /* Prevents text from wrapping */
+    color: white;
+    animation: scrollText 20s linear infinite; /* Adjust duration (20s) as needed */
+}
+
+@keyframes scrollText {
+    0% {
+        left: 100%; /* Initial position */
+    }
+
+    100% {
+        left: -100%; /* Moves text from left to right */
+    }
+}

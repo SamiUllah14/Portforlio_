@@ -1,0 +1,43 @@
+﻿@inject NavigationManager NavigationManager
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-between">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" @onclick="() => NavigateToHome()">HOME</a>
+            <a class="nav-item nav-link" @onclick="() => NavigateToAbout()">ABOUT</a>
+            <a class="nav-item nav-link" @onclick="() => NavigateToProduct()">PRODUCTS</a>
+        </div>
+        <a class="navbar-brand" href="#">
+            <img src="Images/logo.PNG" alt="Logo" style="width: 120px; height: 50px;margin-right:100px;" />
+        </a>
+
+        <div class="navbar-nav">
+<div class="wave-text-container">
+    <p class="wave-text">EXPLORE OUR PROJECTS     </p>
+</div>            <a class="nav-item nav-link" href="#"><i class="fab fa-github fa-lg"></i></a>
+           
+
+        </div>
+    </div>
+</nav>
+
+@code {
+    void NavigateToHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
+    void NavigateToAbout()
+    {
+        NavigationManager.NavigateTo("About");
+    }
+    void NavigateToProduct()
+    {
+        NavigationManager.NavigateTo("Product");
+    }
+}
